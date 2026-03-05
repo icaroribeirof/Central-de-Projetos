@@ -1,0 +1,131 @@
+/* ============================================================
+   SISTEMA DE TEMAS — CLARO / ESCURO
+   Importado por todas as páginas do sistema
+   ============================================================ */
+
+/* ── Tema Escuro (padrão) ── */
+:root {
+    --bg-page:        #f8fafc;
+    --bg-card:        #ffffff;
+    --bg-sidebar:     #0f172a;
+    --bg-header:      #ffffff;
+    --bg-input:       #ffffff;
+    --bg-hover:       #f1f5f9;
+    --bg-table-head:  #f8fafc;
+    --bg-table-hover: #f1f5f9;
+    --bg-column:      #f1f5f9;
+    --bg-modal:       #ffffff;
+    --bg-picker:      #f8fafc;
+    --bg-activity:    #f8fafc;
+    --bg-attachment:  #f8fafc;
+    --bg-tag:         #f1f5f9;
+
+    --text-primary:   #0f172a;
+    --text-secondary: #1e293b;
+    --text-muted:     #64748b;
+    --text-sidebar:   #ffffff;
+
+    --border-color:   #e2e8f0;
+    --border-input:   #cbd5e1;
+
+    --shadow-card:    0 1px 3px rgba(0,0,0,0.10);
+    --shadow-modal:   0 25px 50px -12px rgba(0,0,0,0.25);
+
+    --accent:         #3b82f6;
+    --accent-dk:      #2563eb;
+    --danger:         #ef4444;
+    --success:        #22c55e;
+
+    --toggle-bg:      #e2e8f0;
+    --toggle-knob:    #ffffff;
+    --toggle-icon:    "☀️";
+}
+
+/* ── Tema Escuro ── */
+[data-theme="dark"] {
+    --bg-page:        #0f172a;
+    --bg-card:        #1e293b;
+    --bg-sidebar:     #0a1120;
+    --bg-header:      #1e293b;
+    --bg-input:       #0f172a;
+    --bg-hover:       #334155;
+    --bg-table-head:  #162032;
+    --bg-table-hover: #263348;
+    --bg-column:      #162032;
+    --bg-modal:       #1e293b;
+    --bg-picker:      #162032;
+    --bg-activity:    #162032;
+    --bg-attachment:  #162032;
+    --bg-tag:         #334155;
+
+    --text-primary:   #f1f5f9;
+    --text-secondary: #e2e8f0;
+    --text-muted:     #94a3b8;
+    --text-sidebar:   #e2e8f0;
+
+    --border-color:   #334155;
+    --border-input:   #475569;
+
+    --shadow-card:    0 1px 3px rgba(0,0,0,0.4);
+    --shadow-modal:   0 25px 50px -12px rgba(0,0,0,0.6);
+
+    --toggle-bg:      #3b82f6;
+    --toggle-knob:    #ffffff;
+}
+
+/* ── Transição suave ao trocar tema ── */
+*, *::before, *::after {
+    transition:
+        background-color 0.25s ease,
+        border-color     0.25s ease,
+        color            0.2s  ease,
+        box-shadow       0.25s ease;
+}
+
+/* ── Toggle Button ── */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 12px;
+}
+
+.theme-toggle-track {
+    width: 44px;
+    height: 24px;
+    background: var(--toggle-bg);
+    border-radius: 999px;
+    position: relative;
+    transition: background 0.3s;
+    flex-shrink: 0;
+}
+
+.theme-toggle-knob {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    background: var(--toggle-knob);
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+[data-theme="dark"] .theme-toggle-knob {
+    transform: translateX(20px);
+}
+
+.theme-toggle-icon {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    user-select: none;
+}

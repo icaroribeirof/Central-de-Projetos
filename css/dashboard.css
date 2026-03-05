@@ -1,0 +1,63 @@
+/* dashboard.css — usa variáveis de css/theme.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-secondary);
+}
+
+.navbar {
+    background-color: var(--bg-sidebar);
+    color: var(--text-sidebar);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navbar h1 { margin: 0; font-size: 1.5rem; }
+
+.nav-right { display: flex; align-items: center; }
+
+.logout-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.logout-btn:hover { background-color: #dc2626; }
+
+.container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+.welcome-msg { margin-bottom: 30px; }
+
+.menu-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.menu-item {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid var(--border-color);
+}
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.15);
+}
+.menu-item i { font-size: 3rem; margin-bottom: 15px; color: var(--accent); }
+.menu-item h3 { margin: 10px 0; font-size: 1.4rem; }
+.menu-item p { color: var(--text-muted); font-size: 0.9rem; }
