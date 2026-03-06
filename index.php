@@ -23,12 +23,12 @@ if (isset($_SESSION['user_id'])) {
             <div class="auth-logo">
                 <div class="auth-logo-icon"><i class="fas fa-diagram-project"></i></div>
                 <div class="auth-logo-text">
-                    Central
+                    Cenntral
                     <p>de Projetos</p>
                 </div>
             </div>
 
-            <h2>Bem-vindo de volta!</h2>
+            <h2>Bem-vindo de volta</h2>
             <p class="subtitle">Entre na sua conta para continuar</p>
 
             <div class="msg" id="login-msg"></div>

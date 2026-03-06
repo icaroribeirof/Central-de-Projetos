@@ -2,8 +2,8 @@
 -- Sistema de Gestão de Projetos - Schema Completo e Limpo
 -- ============================================================
 
-CREATE DATABASE IF NOT EXISTS gestao_projetos CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE gestao_projetos;
+CREATE DATABASE IF NOT EXISTS central_projetos CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE central_projetos;
 
 -- -----------------------------------------------
 -- Usuários

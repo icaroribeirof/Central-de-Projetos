@@ -17,7 +17,7 @@ if (!isset($_SESSION['user_id'])) {
 </head>
 <body>
     <nav class="navbar">
-        <h1>Sistema de Gestão de Projetos</h1>
+        <h1>Central de Projetos</h1>
         <div class="nav-right">
             <button class="theme-toggle" id="theme-toggle-btn" title="Alternar tema">
                 <div class="theme-toggle-track"><div class="theme-toggle-knob">☀️</div></div>
