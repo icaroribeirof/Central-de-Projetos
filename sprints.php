@@ -12,6 +12,10 @@ if (!isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nome ao salvar na Tela de Início -->
+    <meta name="apple-mobile-web-app-title" content="C. Projetos">
+    <!-- Ícone da Tela de Início (iOS) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/projeto.png">
     <title>Sprints - Central de Projetos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/theme.css">
